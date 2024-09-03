@@ -33,7 +33,7 @@ to quickly create a Cobra application.`,
 			panic(err)
 		}
 		c := internal.NewContract(api, apiKey)
-		abi, err := c.GetContractABI(address)
+		abi, err := c.GetABI(address)
 		if err != nil {
 			panic(err)
 		}
